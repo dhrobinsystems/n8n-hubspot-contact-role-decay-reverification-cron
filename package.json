@@ -1,0 +1,20 @@
+{
+  "name": "n8n-hubspot-contact-role-decay-reverification-cron",
+  "version": "1.0.0",
+  "description": "Rolling 90-day n8n audit that finds aging HubSpot marketing contacts, re-verifies email deliverability and buyer job titles, quarantines invalid or bounced contacts (optionally flipping Marketing Contact to false), and logs list-hygiene savings. DRY_RUN and SANDBOX_MODE by default.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "simulate": "node src/index.js --simulate",
+    "audit": "node src/index.js --run",
+    "check-config": "node src/index.js --check-config",
+    "test": "node --test tests/hygiene.test.js",
+    "build:workflow": "node scripts/build-workflow.js"
+  },
+  "engines": { "node": ">=20.0.0" },
+  "dependencies": {},
+  "keywords": ["n8n", "hubspot", "list-hygiene", "email-verification", "marketing-contacts", "revops", "cron"],
+  "author": { "name": "DH Robin | dhRobin Systems", "url": "https://dhrobinsystems.com" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/dhrobinsystems/n8n-hubspot-contact-role-decay-reverification-cron.git" }
+}

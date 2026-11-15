@@ -1,0 +1,23 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.service-account.json
+
+# Run state (last audit timestamp)
+data/*
+!data/.gitkeep
+
+# Dependencies
+node_modules/
+
+# Logs and coverage
+logs/
+*.log
+coverage/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
