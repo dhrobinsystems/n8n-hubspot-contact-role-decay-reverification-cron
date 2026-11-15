@@ -29,6 +29,9 @@ Out of the box it reads nothing real and writes nothing: `DRY_RUN=true`, `SANDBO
 11. [Repository layout](#repository-layout)
 
 ---
+## Workflow architecture
+
+![n8n HubSpot Contact Role Decay Reverification Workflow](./assets/n8n-hubspot-contact-role-decay-workflow.png)
 
 ## How an audit runs
 
